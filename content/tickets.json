@@ -1,0 +1,43 @@
+{
+  "tickets": [
+    {
+      "id": "eb",
+      "name": "Early Bird Registration",
+      "price": 400,
+      "includes": "Welcome Reception, plenary sessions, networking events, and the Hall of Fame Awards Gala",
+      "opens": "2027-01-01T06:00:00Z",
+      "closes": "2027-05-01T04:59:59Z",
+      "label": "Jan 1 – Apr 30, 2027"
+    },
+    {
+      "id": "std",
+      "name": "Standard Registration",
+      "price": 500,
+      "includes": "Same access as Early Bird",
+      "opens": "2027-05-01T05:00:00Z",
+      "closes": "2027-06-18T04:59:59Z",
+      "label": "May 1 – Jun 17, 2027"
+    },
+    {
+      "id": "gt",
+      "name": "Hall of Fame Awards Gala: Table",
+      "price": 2500,
+      "includes": "À la carte table. Semi-formal or formal attire required",
+      "label": "À la carte"
+    },
+    {
+      "id": "gk",
+      "name": "Hall of Fame Awards Gala: Ticket",
+      "price": 300,
+      "includes": "À la carte ticket. Semi-formal or formal attire required",
+      "label": "À la carte"
+    },
+    {
+      "id": "bo",
+      "name": "Minority Business Trade Show Booth",
+      "price": 1500,
+      "includes": "6’ table, two chairs, valet loading, one conference and one booth-manager registration, breakfast and lunch",
+      "label": "Minority businesses"
+    }
+  ]
+}

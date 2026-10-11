@@ -1,0 +1,178 @@
+# NAMC Wisconsin conference site: content manager (Decap CMS)
+# One-time setup: change "repo" below to your GitHub repository (owner/name).
+backend:
+  name: github
+  repo: YOUR-GITHUB-USER/YOUR-REPO
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+site_url: https://2027.namcwi.org
+display_url: https://2027.namcwi.org
+media_folder: img
+public_folder: /img
+locale: en
+
+collections:
+  - name: registration
+    label: Registration and prices
+    files:
+      - name: tickets
+        label: Tickets, gala and booth prices
+        file: content/tickets.json
+        fields:
+          - label: Items
+            name: tickets
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Code (never change for existing items)", name: id, widget: string, hint: "Short lowercase code. Existing items: eb, std, gt, gk, bo"}
+              - {label: Name, name: name, widget: string}
+              - {label: "Price (US dollars)", name: price, widget: number, value_type: int, min: 0}
+              - {label: What is included, name: includes, widget: text}
+              - {label: Sales open, name: opens, widget: datetime, required: false, hint: "Leave empty for items with no sale window"}
+              - {label: Sales close, name: closes, widget: datetime, required: false}
+              - {label: "Label shown on the card (e.g. Jan 1 – Apr 30, 2027)", name: label, widget: string}
+      - name: pricing
+        label: Hotel rate and program ad rates
+        file: content/pricing.json
+        fields:
+          - {label: "Hotel rate per night (e.g. 239.00)", name: hotel_rate, widget: string}
+          - label: Program ad rates
+            name: ads
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - {label: Ad, name: name, widget: string}
+              - {label: Size, name: size, widget: string}
+              - {label: "Price (e.g. $3,000)", name: price, widget: string}
+
+  - name: sponsorship
+    label: Sponsorship levels
+    files:
+      - name: sponsors
+        label: Sponsor and exhibitor levels
+        file: content/sponsors.json
+        fields:
+          - label: Levels
+            name: tiers
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Code (never change for existing levels)", name: id, widget: string, hint: "Existing: presenting, platinum, silver, bronze, copper, gov, booth"}
+              - {label: Name, name: name, widget: string}
+              - {label: "Price (US dollars)", name: price, widget: number, value_type: int, min: 0}
+              - {label: Type, name: kind, widget: select, options: [Sponsor, Exhibitor]}
+              - {label: "Short summary on the card", name: highlight, widget: string}
+              - label: Benefits
+                name: benefits
+                widget: list
+                field: {label: Benefit, name: benefit, widget: text}
+
+  - name: people
+    label: Speakers
+    files:
+      - name: speakers
+        label: Keynote and featured speakers
+        file: content/speakers.json
+        fields:
+          - label: Keynote speaker
+            name: keynote
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: "Title (shown on the keynote card and in the FAQ)", name: title, widget: string}
+              - {label: "Organization (long form)", name: org, widget: string}
+              - {label: "Organization (short, shown in the bio panel)", name: short_org, widget: string}
+              - {label: Photo, name: photo, widget: image}
+              - label: Bio paragraphs
+                name: bio
+                widget: list
+                field: {label: Paragraph, name: paragraph, widget: text}
+          - label: Featured speakers
+            name: featured
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Photo, name: photo, widget: image}
+              - {label: "LinkedIn profile URL (optional)", name: linkedin_url, widget: string, required: false}
+              - {label: "LinkedIn search words (used when there is no profile URL)", name: linkedin_search, widget: string, required: false}
+              - {label: "Web link URL", name: web_url, widget: string, required: false}
+              - {label: "Web link label", name: web_label, widget: string, required: false}
+
+  - name: logos
+    label: Logo scrolls
+    files:
+      - name: partners
+        label: Top sponsors and regular sponsors
+        file: content/partners.json
+        fields:
+          - label: "Top sponsors and partners (upper scroll)"
+            name: top
+            widget: list
+            summary: "{{fields.name}}"
+            fields: &partner
+              - {label: Name, name: name, widget: string}
+              - {label: "Caption under the name", name: caption, widget: string, hint: "Use {{p.presenting}}, {{p.platinum}} etc. to show a level price"}
+              - {label: Logo, name: logo, widget: image, required: false}
+              - {label: "Link (e.g. /sponsor?tier=silver or https://...)", name: url, widget: string, required: false}
+              - {label: "This is an open slot (dashed outline)", name: open_slot, widget: boolean, default: false}
+          - label: "Sponsors (lower scroll)"
+            name: regular
+            widget: list
+            summary: "{{fields.name}}"
+            fields: *partner
+
+  - name: pagecontent
+    label: Program, FAQ and history
+    files:
+      - name: program
+        label: Program highlights
+        file: content/program.json
+        fields:
+          - label: Highlights
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "One-line summary", name: summary, widget: string}
+              - {label: Detail, name: detail, widget: text}
+              - {label: "Link goes to", name: page, widget: select, options: [register, speakers, exhibit, sponsor, information, schedule, directions, history, contact, advertise]}
+              - {label: "Link label", name: link_label, widget: string}
+              - {label: Audience, name: audience, widget: select, multiple: true, options: [Attendees, Sponsors, Exhibitors]}
+      - name: faq
+        label: Frequently asked questions
+        file: content/faq.json
+        fields:
+          - label: Questions
+            name: items
+            widget: list
+            summary: "{{fields.question}}"
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Answer, name: answer, widget: text, hint: "Prices and dates can use tokens like {{tk.eb}} and {{ebStart}}. See the guide."}
+      - name: history
+        label: NAMC history and numbers
+        file: content/history.json
+        fields:
+          - label: Timeline
+            name: timeline
+            widget: list
+            summary: "{{fields.year}} {{fields.title}}"
+            fields:
+              - {label: Year, name: year, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Scope, name: scope, widget: select, options: [National, Wisconsin]}
+          - label: Numbers
+            name: numbers
+            widget: list
+            summary: "{{fields.value}} {{fields.label}}"
+            fields:
+              - {label: Value, name: value, widget: string}
+              - {label: "Prefix (e.g. $)", name: prefix, widget: string, required: false}
+              - {label: "Suffix (e.g. M, B, +)", name: suffix, widget: string, required: false}
+              - {label: "Decimals (0 or 1)", name: decimals, widget: number, value_type: int, min: 0, max: 1}
+              - {label: Label, name: label, widget: string}

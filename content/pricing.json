@@ -1,0 +1,35 @@
+{
+  "hotel_rate": "239.00",
+  "ads": [
+    {
+      "name": "Full-Page Color",
+      "size": "8.5” × 11”",
+      "price": "$3,000"
+    },
+    {
+      "name": "Full-Page Black & White",
+      "size": "8.5” × 11”",
+      "price": "$2,500"
+    },
+    {
+      "name": "Half-Page Color",
+      "size": "8.5” × 5.5”",
+      "price": "$1,750"
+    },
+    {
+      "name": "Half-Page Black & White",
+      "size": "8.5” × 5.5”",
+      "price": "$1,250"
+    },
+    {
+      "name": "Quarter-Page Color",
+      "size": "4.25” × 5.5”",
+      "price": "$1,000"
+    },
+    {
+      "name": "Quarter-Page Black & White",
+      "size": "4.25” × 5.5”",
+      "price": "$750"
+    }
+  ]
+}

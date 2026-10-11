@@ -1,0 +1,122 @@
+{
+  "tiers": [
+    {
+      "id": "presenting",
+      "name": "Presenting Partner",
+      "price": 50000,
+      "kind": "Sponsor",
+      "highlight": "Premium visibility, 20 gala seats, a complimentary booth",
+      "benefits": [
+        "VIP Access: invitation-only VIP reception and premium reserved seating for twenty (20) guests at the Hall of Fame Awards Gala (two tables of ten)",
+        "Prime Logo Placement at the Gala and Reception and across conference materials, including invitations, programs, signage, and digital advertising",
+        "Official Conference Lanyards: company logo on the lanyards worn by attendees",
+        "Premium Advertising: two-page, full-bleed ad with premium inside-cover placement in the official conference program journal",
+        "Media Recognition in press releases, interviews, media outreach, and event coverage, including potential broadcast opportunities",
+        "Featured Digital Advertising: custom branded banner on the conference website homepage",
+        "Dedicated Social Media Recognition, including a sponsor spotlight",
+        "Promotional Materials: distribute approved branded materials and giveaway items to attendees",
+        "Trade Show Exhibitor Booth: one (1) complimentary booth",
+        "Extended Partnership Recognition: welcome guests at the Gala, plus Premium Sponsorship Recognition at the 2026 NAMC Wisconsin 11th Annual Construction Industry B2B Forum on November 19, 2026",
+        "Herb Miller Briefcase Minority Business Owner Advanced Development Program: exclusive presenting-sponsor recognition"
+      ]
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum Sponsor",
+      "price": 35000,
+      "kind": "Sponsor",
+      "highlight": "10 registrations, two gala tables, a complimentary booth",
+      "benefits": [
+        "Welcome Reception Recognition: prominent logo display and recognition",
+        "Conference Lanyard Recognition: company logo on the official lanyards",
+        "Trade Show Presence: one (1) complimentary exhibitor booth",
+        "Conference Access: ten (10) complimentary conference registrations",
+        "Premier Gala Seating: two (2) reserved tables of ten for twenty (20) guests at the Hall of Fame Awards Gala",
+        "Premium Program Advertising: full-page color ad in the Gala commemorative program book",
+        "Venue-Wide Brand Visibility: company name or logo on signage throughout the venue",
+        "Social Media Recognition across NAMC’s platforms and conference communications",
+        "Exclusive VIP Access: invitation-only pre-event VIP reception for the Gala",
+        "Gala Welcome and Extended Industry Recognition: a representative welcomes guests at the Gala; includes Premium Sponsorship Recognition at the 2026 NAMC Wisconsin 11th Annual Construction Industry B2B Forum on November 19, 2026",
+        "Recognition of the Herb Miller Briefcase Minority Business Owner Advanced Development Program"
+      ]
+    },
+    {
+      "id": "silver",
+      "name": "Silver Sponsor",
+      "price": 25000,
+      "kind": "Sponsor",
+      "highlight": "8 registrations, one gala table, a complimentary booth",
+      "benefits": [
+        "Legacy Luncheon Recognition: prominent logo placement and brand recognition",
+        "Venue-Wide Brand Visibility on signage throughout the venue",
+        "Trade Show Presence: one (1) complimentary exhibitor booth",
+        "Conference Access: eight (8) complimentary conference registrations",
+        "Premier Gala Seating: one (1) reserved table of ten (10 guests) at the Hall of Fame Awards Gala",
+        "Program Advertising: full-page color ad in the Gala commemorative program book",
+        "Premium Program Recognition in the Gala commemorative program book",
+        "Social Media Recognition across NAMC’s platforms and conference communications",
+        "Exclusive VIP and Industry Access: invitation-only Gala VIP Reception, plus Premium Sponsorship Recognition at the 2026 NAMC Wisconsin 11th Annual Construction Industry B2B Forum on November 19, 2026",
+        "Herb Miller Briefcase Minority Business Owner Advanced Development Program: premier sponsor recognition"
+      ]
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze Sponsor",
+      "price": 15000,
+      "kind": "Sponsor",
+      "highlight": "5 registrations, 5 gala seats, full-page program ad",
+      "benefits": [
+        "Conference Breakfast Recognition: prominent logo placement and brand recognition",
+        "Venue-Wide Brand Visibility on signage throughout the venue",
+        "Conference Access: five (5) complimentary conference registrations",
+        "Gala Seating: five (5) reserved seats at the Hall of Fame Awards Gala",
+        "Program Advertising: full-page color ad in the Gala commemorative program book",
+        "Special Program Recognition in the Gala commemorative program book",
+        "Social Media Recognition across NAMC’s platforms and conference communications",
+        "Exclusive VIP Access: invitation-only Gala VIP Reception, plus Premium Sponsorship Recognition at the 2026 NAMC Wisconsin 11th Annual Construction Industry B2B Forum on November 19, 2026"
+      ]
+    },
+    {
+      "id": "copper",
+      "name": "Copper Sponsor",
+      "price": 10000,
+      "kind": "Sponsor",
+      "highlight": "3 registrations, 3 gala seats, full-page program ad",
+      "benefits": [
+        "Conference Access: three (3) complimentary conference registrations",
+        "Gala Seating: three (3) reserved seats at the Hall of Fame Awards Gala",
+        "Program Advertising: full-page color ad in the Gala commemorative program book",
+        "Special Program Recognition in the Gala commemorative program book",
+        "Event Signage Recognition on select conference and event signage"
+      ]
+    },
+    {
+      "id": "gov",
+      "name": "Government Agency & Minority Business Sponsor",
+      "price": 5000,
+      "kind": "Sponsor",
+      "highlight": "2 registrations, 2 gala seats, half-page program ad",
+      "benefits": [
+        "Conference Access: two (2) complimentary conference registrations",
+        "Gala Seating: two (2) reserved seats at the Hall of Fame Awards Gala",
+        "Program Advertising: half-page color ad in the Gala commemorative program book",
+        "Special Program Recognition in the Gala commemorative program book",
+        "Event Signage Recognition on select conference and event signage",
+        "Eligibility: companies must meet certified Minority or Woman-Owned Business Enterprise (MWBE) government program size standards. Proof of current certification must be uploaded at registration."
+      ]
+    },
+    {
+      "id": "booth",
+      "name": "Minority Business Trade Show Exhibitor Booth",
+      "price": 1500,
+      "kind": "Exhibitor",
+      "highlight": "Table, two chairs, and two registrations",
+      "benefits": [
+        "One (1) 6’ rectangular table and two (2) chairs",
+        "Valet parking for loading and unloading",
+        "One (1) conference registration and one (1) booth-manager registration",
+        "Breakfast and lunch provided"
+      ]
+    }
+  ]
+}

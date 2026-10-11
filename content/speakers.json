@@ -1,0 +1,41 @@
+{
+  "keynote": {
+    "name": "Khia Chukudebelu",
+    "title": "Partner, General Manager, Datacenter Global Supply Chain at Microsoft Cloud Operations + Innovation",
+    "org": "Microsoft Cloud Operations + Innovation",
+    "short_org": "Microsoft",
+    "photo": "/img/img-c2466604.webp",
+    "bio": [
+      "Khia M. Chukudebelu is a distinguished leader in global supply chain and operations management, currently serving as Global Senior Director, Datacenter Supply Chain at Microsoft. Building on a robust foundation in industrial and energy sectors, Khia brings extensive expertise in orchestrating complex global operations and driving strategic initiatives. Their career trajectory demonstrates a consistent focus on operational excellence, P&L leadership, and advanced supply chain planning.",
+      "At Microsoft, Khia has advanced to lead critical datacenter supply chain functions, leveraging their deep understanding of database and file management software environments. Prior to this, they significantly contributed to Microsoft's global supply chain as a Center of Excellence Senior Director, focusing on optimizing operations and implementing best practices. This role built upon their extensive experience at Baker Hughes, where Khia held several key leadership positions. As a Global Business Operations Executive and Global Services Sales & Operations Planning Leader, they were instrumental in managing business operations and aligning sales and operational strategies. Their tenure also included leading Services P&L, showcasing strong financial acumen and strategic oversight within the industrial machinery and equipment sector.",
+      "Khia's early career was shaped by a comprehensive leadership development journey through General Electric's Accelerated Leadership Program (XLP). This program provided a broad exposure to various facets of industrial operations, including strategic sourcing in the oil and gas exploration and services industry, global sales and operations planning, senior services project engineering, and quality operations management. Their roles as Strategic Sourcing Leader in the UK and Global Sales & Operations Planning Leader highlight a proven ability to manage international supply chains and optimize resource allocation. Khia also demonstrated leadership in quality operations and served as a Power Nozzle Cell Leader, underscoring a commitment to operational efficiency and product integrity.",
+      "Academically, Khia holds a Bachelor of Science from Kettering University and a Master of Business Administration from Xavier University, providing a strong blend of technical and business acumen essential for navigating complex global enterprises. Their career, spanning over a decade of progressive leadership, reflects a deep commitment to driving efficiency, innovation, and strategic growth within major technology and industrial organizations."
+    ]
+  },
+  "featured": [
+    {
+      "name": "Dora Drake",
+      "photo": "/img/img-099da6e5.webp",
+      "linkedin_url": "",
+      "linkedin_search": "Dora Drake Wisconsin Senate",
+      "web_url": "https://legis.wisconsin.gov/senate/04/drake",
+      "web_label": "Official page"
+    },
+    {
+      "name": "Cavalier Johnson",
+      "photo": "/img/img-2b0cd040.webp",
+      "linkedin_url": "",
+      "linkedin_search": "Cavalier Johnson Milwaukee Mayor",
+      "web_url": "https://city.milwaukee.gov/mayor",
+      "web_label": "Mayor’s office"
+    },
+    {
+      "name": "Ugo Nwagbaraocha",
+      "photo": "/img/img-f2795546.webp",
+      "linkedin_url": "",
+      "linkedin_search": "Ugo Nwagbaraocha Diamond Discs International",
+      "web_url": "https://biztimes.com/ugo-nwagbaraocha-wisconsin275",
+      "web_label": "BizTimes profile"
+    }
+  ]
+}

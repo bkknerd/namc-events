@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "question": "Who is the keynote speaker?",
+      "answer": "{{k.name}}, {{k.title}}."
+    },
+    {
+      "question": "When and where is the conference?",
+      "answer": "Monday, June 28 through Wednesday, June 30, 2027 at the Pfister Hotel in Milwaukee."
+    },
+    {
+      "question": "How much does registration cost?",
+      "answer": "Early Bird is {{tk.eb}} from {{ebStart}} to {{ebEnd}}. Standard is {{tk.std}} from {{stdStart}} to {{stdEnd}}."
+    },
+    {
+      "question": "What does registration include?",
+      "answer": "The Welcome Reception, all plenary sessions and networking events, and the Hall of Fame Awards Gala."
+    },
+    {
+      "question": "What is the Gala dress code?",
+      "answer": "Semi-formal or formal attire is required."
+    },
+    {
+      "question": "How much is the hotel?",
+      "answer": "The Pfister Hotel standard rate is {{hotel}} per night."
+    }
+  ]
+}

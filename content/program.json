@@ -1,0 +1,65 @@
+{
+  "items": [
+    {
+      "title": "Welcome Reception",
+      "summary": "Opens the conference. Included with registration.",
+      "detail": "Included with every conference registration.",
+      "page": "register",
+      "link_label": "Register",
+      "audience": [
+        "Attendees"
+      ]
+    },
+    {
+      "title": "Plenary sessions and networking events",
+      "summary": "Open to all registered attendees.",
+      "detail": "Plenary sessions and networking events are included with registration. See who is on the 2027 speaker lineup.",
+      "page": "speakers",
+      "link_label": "Meet the speakers",
+      "audience": [
+        "Attendees"
+      ]
+    },
+    {
+      "title": "Minority business trade show",
+      "summary": "Exhibitor booths with breakfast and lunch provided to exhibitors.",
+      "detail": "Minority business booths are {{tk.bo}}. Breakfast and lunch are provided to exhibitors.",
+      "page": "exhibit",
+      "link_label": "Reserve a booth",
+      "audience": [
+        "Exhibitors"
+      ]
+    },
+    {
+      "title": "Conference Breakfast",
+      "summary": "Sponsor recognition at the Conference Breakfast.",
+      "detail": "Recognition at the Conference Breakfast is part of the sponsor levels.",
+      "page": "sponsor",
+      "link_label": "See sponsor levels",
+      "audience": [
+        "Sponsors"
+      ]
+    },
+    {
+      "title": "Legacy Luncheon",
+      "summary": "Sponsor recognition at the Legacy Luncheon.",
+      "detail": "Recognition at the Legacy Luncheon is part of the sponsor levels.",
+      "page": "sponsor",
+      "link_label": "See sponsor levels",
+      "audience": [
+        "Sponsors"
+      ]
+    },
+    {
+      "title": "Hall of Fame Awards Gala",
+      "summary": "Semi-formal or formal attire required. A VIP reception precedes the Gala for sponsors.",
+      "detail": "Admission is included with registration. Also available à la carte: Table {{tk.gt}}, Ticket {{tk.gk}}. Semi-formal or formal attire is required, and a VIP reception precedes the Gala for sponsors.",
+      "page": "information",
+      "link_label": "Gala and hotel details",
+      "audience": [
+        "Attendees",
+        "Sponsors"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "timeline": [
+    {
+      "year": "1969",
+      "title": "NAMC is founded in Oakland, California",
+      "text": "Raymond Dones and Joseph Debro start the National Association of Minority Contractors with a handful of members, creating what remains the oldest minority construction trade association in the United States. At the time, federal business with minority firms totaled only about $13 million.",
+      "scope": "National"
+    },
+    {
+      "year": "1984",
+      "title": "A fast-growing voice",
+      "text": "By the mid-1980s membership has grown to roughly 3,500, and federal contracts with minority businesses reached $4.8 billion in fiscal year 1983.",
+      "scope": "National"
+    },
+    {
+      "year": "Mission",
+      "title": "Building Bridges – Crossing Barriers",
+      "text": "Membership is open to people of all races and ethnic backgrounds, with a focus on construction industry concerns common to African Americans, Asian Americans, Hispanic Americans, and Native Americans.",
+      "scope": "National"
+    },
+    {
+      "year": "Today",
+      "title": "Access. Advocacy. Contractor readiness.",
+      "text": "NAMC works with corporate partners, strategic allies, and public agencies to connect members to contracts and resources, speak up on legislation, and build capacity through training.",
+      "scope": "National"
+    },
+    {
+      "year": "Legacy",
+      "title": "A network built to last",
+      "text": "Through local chapters and a growing student chapter program, NAMC counts more than 50 Hall of Fame members and Legacy Builders and an annual project capacity of over a billion dollars nationally.",
+      "scope": "National"
+    },
+    {
+      "year": "Milwaukee",
+      "title": "NAMC Wisconsin Chapter",
+      "text": "The Wisconsin Chapter advances education, advocacy, and opportunity for its members from its home in Milwaukee.",
+      "scope": "Wisconsin"
+    },
+    {
+      "year": "2024",
+      "title": "National leadership from Wisconsin",
+      "text": "Ugo Nwagbaraocha, president of the Wisconsin Chapter and of Diamond Discs International, is elected vice president of the national organization.",
+      "scope": "Wisconsin"
+    },
+    {
+      "year": "2026",
+      "title": "The 11th Annual Construction Industry B2B Forum",
+      "text": "On November 19, NAMC Wisconsin brings project presentations, utility updates, and strategic matchmaking to the Potawatomi Hotel &amp; Casino Event Center.",
+      "scope": "Wisconsin"
+    },
+    {
+      "year": "2027",
+      "title": "The 58th Annual NAMC National Conference",
+      "text": "NAMC Wisconsin hosts the national conference in Milwaukee, June 28 to 30, 2027, at the Pfister Hotel, bringing national construction firms, minority contractors, developers, and public agencies together.",
+      "scope": "Wisconsin"
+    }
+  ],
+  "numbers": [
+    {
+      "value": "13",
+      "prefix": "$",
+      "suffix": "M",
+      "decimals": 0,
+      "label": "Federal business with minority firms at NAMC’s 1969 founding"
+    },
+    {
+      "value": "4.8",
+      "prefix": "$",
+      "suffix": "B",
+      "decimals": 1,
+      "label": "Federal contracts with minority businesses, fiscal year 1983"
+    },
+    {
+      "value": "3500",
+      "prefix": "",
+      "suffix": "+",
+      "decimals": 0,
+      "label": "Members by the mid-1980s"
+    },
+    {
+      "value": "50",
+      "prefix": "",
+      "suffix": "+",
+      "decimals": 0,
+      "label": "Hall of Fame members and Legacy Builders"
+    },
+    {
+      "value": "1",
+      "prefix": "$",
+      "suffix": "B+",
+      "decimals": 0,
+      "label": "Annual project capacity nationally"
+    }
+  ]
+}
