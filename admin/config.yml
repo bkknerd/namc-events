@@ -2,7 +2,7 @@
 # One-time setup: change "repo" below to your GitHub repository (owner/name).
 backend:
   name: github
-  repo: YOUR-GITHUB-USER/YOUR-REPO
+  repo: bkknerd/namc-events
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
