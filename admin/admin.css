@@ -1,0 +1,13 @@
+#nc-root{padding-bottom:30px;box-sizing:border-box}
+#dl-foot{position:fixed;left:0;right:0;bottom:0;height:28px;line-height:28px;text-align:center;background:#0e2238;color:#f3eee4;font:600 12px/28px "Barlow",system-ui,sans-serif;letter-spacing:.04em;z-index:9999}
+#dl-help{position:fixed;right:16px;bottom:44px;z-index:9998;min-height:44px;padding:0 18px;background:#0e2238;color:#f3eee4;border:2px solid #d1a441;font:700 12px "Barlow",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+#dl-help:hover{background:#8c181c}
+#dl-dlg{width:min(640px,92vw);border:0;border-top:6px solid #d1a441;padding:0 28px 24px;color:#0e2238;background:#fbf9f4;font:16px/1.55 "Barlow",system-ui,sans-serif}
+#dl-dlg::backdrop{background:rgba(14,34,56,.6)}
+.dl-head{display:flex;align-items:center;gap:16px;padding:20px 0 8px}
+.dl-head h2{margin:0;font:400 2rem/1 "Bebas Neue","Barlow",sans-serif;letter-spacing:.03em;flex:1}
+.dl-head button{width:44px;height:44px;background:none;border:2px solid #0e2238;font-size:24px;cursor:pointer;color:#0e2238}
+#dl-dlg h3{margin:18px 0 6px;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#4a5a6e}
+#dl-dlg li{margin:6px 0}
+#dl-dlg code{background:#f3eee4;padding:1px 6px;font-size:14px}
+.dl-foot-note{margin:14px 0 0;font-size:14px;color:#4a5a6e}

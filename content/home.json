@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "kicker": "58TH ANNUAL · HOSTED BY NAMC WISCONSIN CHAPTER",
+    "title_lines": [
+      "NAMC",
+      "NATIONAL",
+      "CONFERENCE"
+    ],
+    "theme_label": "2027 THEME",
+    "theme_title": "POWERING THE FUTURE",
+    "theme_line_1": "Maximizing Community Benefit",
+    "theme_line_2": "Through Local Business"
+  },
+  "side": {
+    "badge": "Save the date · 2027",
+    "heading": "WHAT ARE YOU HERE TO DO?",
+    "paths": [
+      {
+        "name": "Attend",
+        "desc": "Register for the conference",
+        "detail": ""
+      },
+      {
+        "name": "Sponsor",
+        "desc": "Partner with purpose, lead with impact",
+        "detail": "Levels from {{tmin}} to {{tmax}}"
+      },
+      {
+        "name": "Exhibit",
+        "desc": "Reserve a minority business booth",
+        "detail": "{{tk.bo}} per booth"
+      }
+    ]
+  },
+  "hotel_caption": "Pfister Hotel · June 28 – 30, 2027",
+  "skyline_caption": "A city of innovation & opportunity",
+  "why_milwaukee": {
+    "label": "Why Milwaukee?",
+    "heading_lines": [
+      "A CITY OF",
+      "BUILDERS."
+    ],
+    "items": [
+      {
+        "title": "Strategic location",
+        "text": "Central to major U.S. markets with world-class transportation access."
+      },
+      {
+        "title": "Thriving industries",
+        "text": "Manufacturing, healthcare, technology, and infrastructure."
+      },
+      {
+        "title": "Rich culture",
+        "text": "A vibrant community with a proud history of innovation and resilience."
+      },
+      {
+        "title": "Commitment to growth",
+        "text": "Investments in people, places, and partnerships."
+      }
+    ]
+  },
+  "welcome": {
+    "label": "Welcome to Milwaukee",
+    "heading_lines": [
+      "POWERING THE",
+      "FUTURE."
+    ]
+  },
+  "keynote_label": "2027 keynote speaker",
+  "numbers": {
+    "label": "Milwaukee by the numbers",
+    "items": [
+      {
+        "value": "73",
+        "label": "Major construction companies"
+      },
+      {
+        "value": "5",
+        "label": "Fortune 500 headquarters"
+      },
+      {
+        "value": "$100+ Billion",
+        "label": "Regional economy"
+      },
+      {
+        "value": "1.5 Million",
+        "label": "Metro residents"
+      }
+    ]
+  },
+  "why_partner": {
+    "heading": "WHY PARTNER WITH NAMC",
+    "intro": "The conference brings together large national construction firms, minority contractors, developers, corporate executives, government agencies, and industry decision-makers from across the country.",
+    "cards": [
+      {
+        "title": "Expand your network",
+        "text": "Connect with industry leaders nationwide."
+      },
+      {
+        "title": "Increase brand visibility",
+        "text": "Elevate your brand among key decision-makers."
+      },
+      {
+        "title": "Drive business growth",
+        "text": "Generate new opportunities and partnerships."
+      },
+      {
+        "title": "Demonstrate your commitment",
+        "text": "Support local business growth, community benefit, and economic opportunity."
+      }
+    ]
+  },
+  "quote": {
+    "text": "“We would be honored to welcome the NAMC family to the ‘City of Festivals’ in 2027 and look forward to the opportunity to host this important national gathering.”",
+    "attribution": "– Mayor Cavalier Johnson"
+  },
+  "forum": {
+    "label": "2026 B2B Forum",
+    "heading": "NAMC WISCONSIN · 11TH ANNUAL CONSTRUCTION INDUSTRY B2B FORUM",
+    "button": "View the 2026 forum"
+  },
+  "cta": {
+    "label": "Partner with purpose",
+    "heading_lines": [
+      "LEAD WITH",
+      "IMPACT."
+    ]
+  },
+  "images": {
+    "hero_illustration": "/img/img-830ad0b1.webp",
+    "hero_illustration_alt": "Illustration of Milwaukee City Hall",
+    "hotel": "/img/img-0cf9e8db.webp",
+    "hotel_alt": "The historic Pfister Hotel in downtown Milwaukee",
+    "skyline_day": "/img/img-9155d5cf.webp",
+    "skyline_day_alt": "Milwaukee skyline at sunrise",
+    "skyline_night": "/img/img-8eb2fa2d.webp",
+    "skyline_night_alt": "Milwaukee skyline and Hoan Bridge at night",
+    "skyline_dusk": "/img/img-48fc0e74.webp",
+    "skyline_dusk_alt": "Milwaukee skyline at dusk"
+  }
+}

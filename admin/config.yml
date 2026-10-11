@@ -1,5 +1,5 @@
 # NAMC Wisconsin conference site: content manager (Decap CMS)
-# One-time setup: change "repo" below to your GitHub repository (owner/name).
+# Repository the content is saved to (owner/name). Branch must match your default branch.
 backend:
   name: github
   repo: bkknerd/namc-events
@@ -7,13 +7,146 @@ backend:
   base_url: https://api.netlify.com
   auth_endpoint: auth
 
-site_url: https://namc-events.netlify.app/
-display_url: https://namc-events.netlify.app/
+logo_url: /img/img-ce186583.webp
+site_url: https://namc-events.netlify.app
+display_url: https://namc-events.netlify.app
 media_folder: img
 public_folder: /img
 locale: en
 
 collections:
+  - name: homepage
+    label: Home page
+    files:
+      - name: home
+        label: Home page text and photos
+        file: content/home.json
+        fields:
+          - label: Top banner
+            name: hero
+            widget: object
+            collapsed: false
+            fields:
+              - {label: "Small line above the title", name: kicker, widget: string}
+              - {label: "Big title (one line per row)", name: title_lines, widget: list, label_singular: line, field: {label: Line, name: line, widget: string}, hint: "Shown stacked. Keep it to 3 short lines."}
+              - {label: "Theme label", name: theme_label, widget: string}
+              - {label: "Theme title", name: theme_title, widget: string}
+              - {label: "Theme line 1", name: theme_line_1, widget: string}
+              - {label: "Theme line 2", name: theme_line_2, widget: string}
+          - label: 'Red box: "What are you here to do?"'
+            name: side
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Small tag", name: badge, widget: string}
+              - {label: Heading, name: heading, widget: string}
+              - label: "The three cards (Attend, Sponsor, Exhibit)"
+                name: paths
+                widget: list
+                label_singular: card
+                min: 3
+                max: 3
+                summary: "{{fields.name}}"
+                hint: "Keep exactly three. The Attend card shows the Early Bird price automatically, so its small print is not used."
+                fields:
+                  - {label: Card name, name: name, widget: string}
+                  - {label: "One-line description", name: desc, widget: string}
+                  - {label: "Small print (can use prices like {{tmin}} and {{tk.bo}})", name: detail, widget: string, required: false}
+          - {label: "Caption under the hotel photo", name: hotel_caption, widget: string}
+          - {label: "Caption under the skyline photo", name: skyline_caption, widget: string}
+          - label: 'Section: "Why Milwaukee?"'
+            name: why_milwaukee
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Small label", name: label, widget: string}
+              - {label: "Big heading (one line per row)", name: heading_lines, widget: list, label_singular: line, field: {label: Line, name: line, widget: string}}
+              - label: Reasons
+                name: items
+                widget: list
+                label_singular: reason
+                summary: "{{fields.title}}"
+                hint: "Four reasons fit the layout best."
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Text, name: text, widget: text}
+          - label: Night skyline photo text
+            name: welcome
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Small label", name: label, widget: string}
+              - {label: "Big heading (one line per row)", name: heading_lines, widget: list, label_singular: line, field: {label: Line, name: line, widget: string}}
+          - {label: "Label above the keynote speaker card", name: keynote_label, widget: string, hint: "The speaker's name, title and photo are edited under Speakers."}
+          - label: '"Milwaukee by the numbers"'
+            name: numbers
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Section label, name: label, widget: string}
+              - label: Numbers
+                name: items
+                widget: list
+                label_singular: number
+                summary: "{{fields.value}} {{fields.label}}"
+                fields:
+                  - {label: "The number (for example 73 or $100+ Billion)", name: value, widget: string}
+                  - {label: "What it describes", name: label, widget: string}
+          - label: '"Why partner with NAMC"'
+            name: why_partner
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: "Paragraph under the heading", name: intro, widget: text}
+              - label: Benefit cards
+                name: cards
+                widget: list
+                label_singular: card
+                summary: "{{fields.title}}"
+                hint: "Four cards fit the layout best."
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Text, name: text, widget: text}
+          - label: Quote
+            name: quote
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "The quote (include the quotation marks)", name: text, widget: text}
+              - {label: "Who said it", name: attribution, widget: string}
+          - label: "2026 forum banner"
+            name: forum
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Small label, name: label, widget: string}
+              - {label: Headline, name: heading, widget: string}
+              - {label: "Button text", name: button, widget: string}
+          - label: 'Bottom section: "Lead with impact"'
+            name: cta
+            widget: object
+            collapsed: true
+            fields:
+              - {label: Small label, name: label, widget: string}
+              - {label: "Big heading (one line per row)", name: heading_lines, widget: list, label_singular: line, field: {label: Line, name: line, widget: string}}
+          - label: Photos
+            name: images
+            widget: object
+            collapsed: true
+            hint: "Each photo has a description for people who use screen readers. Please keep both up to date."
+            fields:
+              - {label: "Top banner illustration", name: hero_illustration, widget: image}
+              - {label: "Description of that illustration", name: hero_illustration_alt, widget: string}
+              - {label: "Pfister Hotel photo", name: hotel, widget: image}
+              - {label: "Description of the hotel photo", name: hotel_alt, widget: string}
+              - {label: "Skyline photo (daytime)", name: skyline_day, widget: image}
+              - {label: "Description of the daytime skyline", name: skyline_day_alt, widget: string}
+              - {label: "Skyline photo (night)", name: skyline_night, widget: image}
+              - {label: "Description of the night skyline", name: skyline_night_alt, widget: string}
+              - {label: "Skyline photo (dusk)", name: skyline_dusk, widget: image}
+              - {label: "Description of the dusk skyline", name: skyline_dusk_alt, widget: string}
+
   - name: registration
     label: Registration and prices
     files:
@@ -24,28 +157,31 @@ collections:
           - label: Items
             name: tickets
             widget: list
+            label_singular: item
             summary: "{{fields.name}}"
+            hint: "Change a price here and it updates everywhere on the site."
             fields:
-              - {label: "Code (never change for existing items)", name: id, widget: string, hint: "Short lowercase code. Existing items: eb, std, gt, gk, bo"}
+              - {label: "Code (do not change on existing items)", name: id, widget: string, pattern: ['^[a-z0-9]+$', 'Use lowercase letters and numbers only'], hint: "A short code the site uses behind the scenes. Existing items use: eb, std, gt, gk, bo."}
               - {label: Name, name: name, widget: string}
-              - {label: "Price (US dollars)", name: price, widget: number, value_type: int, min: 0}
-              - {label: What is included, name: includes, widget: text}
-              - {label: Sales open, name: opens, widget: datetime, required: false, hint: "Leave empty for items with no sale window"}
-              - {label: Sales close, name: closes, widget: datetime, required: false}
-              - {label: "Label shown on the card (e.g. Jan 1 – Apr 30, 2027)", name: label, widget: string}
+              - {label: "Price in US dollars", name: price, widget: number, value_type: int, min: 0, hint: "Numbers only. Do not type the $ sign."}
+              - {label: "What is included", name: includes, widget: text}
+              - {label: "Sales start", name: opens, widget: datetime, required: false, hint: "Leave empty for items that are not sold in a time window, like the Gala table."}
+              - {label: "Sales end", name: closes, widget: datetime, required: false}
+              - {label: "Date label shown on the card", name: label, widget: string, hint: "For example: Jan 1 – Apr 30, 2027"}
       - name: pricing
         label: Hotel rate and program ad rates
         file: content/pricing.json
         fields:
-          - {label: "Hotel rate per night (e.g. 239.00)", name: hotel_rate, widget: string}
-          - label: Program ad rates
+          - {label: "Hotel rate per night", name: hotel_rate, widget: string, hint: "Numbers only, for example 239.00"}
+          - label: "Program ad rates"
             name: ads
             widget: list
+            label_singular: ad
             summary: "{{fields.name}}"
             fields:
-              - {label: Ad, name: name, widget: string}
+              - {label: "Ad name", name: name, widget: string}
               - {label: Size, name: size, widget: string}
-              - {label: "Price (e.g. $3,000)", name: price, widget: string}
+              - {label: "Price", name: price, widget: string, hint: "Include the $ sign, for example $3,000"}
 
   - name: sponsorship
     label: Sponsorship levels
@@ -57,16 +193,18 @@ collections:
           - label: Levels
             name: tiers
             widget: list
+            label_singular: level
             summary: "{{fields.name}}"
             fields:
-              - {label: "Code (never change for existing levels)", name: id, widget: string, hint: "Existing: presenting, platinum, silver, bronze, copper, gov, booth"}
+              - {label: "Code (do not change on existing levels)", name: id, widget: string, pattern: ['^[a-z0-9]+$', 'Use lowercase letters and numbers only'], hint: "Existing levels use: presenting, platinum, silver, bronze, copper, gov, booth."}
               - {label: Name, name: name, widget: string}
-              - {label: "Price (US dollars)", name: price, widget: number, value_type: int, min: 0}
+              - {label: "Price in US dollars", name: price, widget: number, value_type: int, min: 0, hint: "Numbers only. Do not type the $ sign."}
               - {label: Type, name: kind, widget: select, options: [Sponsor, Exhibitor]}
-              - {label: "Short summary on the card", name: highlight, widget: string}
-              - label: Benefits
+              - {label: "Short summary shown on the card", name: highlight, widget: string}
+              - label: "What the level includes"
                 name: benefits
                 widget: list
+                label_singular: benefit
                 field: {label: Benefit, name: benefit, widget: text}
 
   - name: people
@@ -76,30 +214,33 @@ collections:
         label: Keynote and featured speakers
         file: content/speakers.json
         fields:
-          - label: Keynote speaker
+          - label: "Keynote speaker"
             name: keynote
             widget: object
+            collapsed: false
             fields:
               - {label: Name, name: name, widget: string}
-              - {label: "Title (shown on the keynote card and in the FAQ)", name: title, widget: string}
-              - {label: "Organization (long form)", name: org, widget: string}
-              - {label: "Organization (short, shown in the bio panel)", name: short_org, widget: string}
-              - {label: Photo, name: photo, widget: image}
-              - label: Bio paragraphs
+              - {label: "Title and company (shown on the keynote card and FAQ)", name: title, widget: string}
+              - {label: "Company, long version", name: org, widget: string}
+              - {label: "Company, short version (shown in the bio panel)", name: short_org, widget: string}
+              - {label: Photo, name: photo, widget: image, hint: "A square or portrait photo, about 800 pixels wide."}
+              - label: "Bio, one paragraph per box"
                 name: bio
                 widget: list
+                label_singular: paragraph
                 field: {label: Paragraph, name: paragraph, widget: text}
-          - label: Featured speakers
+          - label: "Featured speakers"
             name: featured
             widget: list
+            label_singular: speaker
             summary: "{{fields.name}}"
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Photo, name: photo, widget: image}
-              - {label: "LinkedIn profile URL (optional)", name: linkedin_url, widget: string, required: false}
-              - {label: "LinkedIn search words (used when there is no profile URL)", name: linkedin_search, widget: string, required: false}
-              - {label: "Web link URL", name: web_url, widget: string, required: false}
-              - {label: "Web link label", name: web_label, widget: string, required: false}
+              - {label: "LinkedIn profile address (optional)", name: linkedin_url, widget: string, required: false}
+              - {label: "LinkedIn search words (used when there is no profile address)", name: linkedin_search, widget: string, required: false}
+              - {label: "Website address (optional)", name: web_url, widget: string, required: false}
+              - {label: "Website link text", name: web_label, widget: string, required: false}
 
   - name: logos
     label: Logo scrolls
@@ -108,19 +249,25 @@ collections:
         label: Top sponsors and regular sponsors
         file: content/partners.json
         fields:
-          - label: "Top sponsors and partners (upper scroll)"
+          - {label: "Upper scroll title", name: top_title, widget: string}
+          - {label: "Upper scroll link text", name: top_link_label, widget: string}
+          - label: "Upper scroll: top sponsors and partners"
             name: top
             widget: list
+            label_singular: logo
             summary: "{{fields.name}}"
             fields: &partner
               - {label: Name, name: name, widget: string}
-              - {label: "Caption under the name", name: caption, widget: string, hint: "Use {{p.presenting}}, {{p.platinum}} etc. to show a level price"}
+              - {label: "Small text under the name", name: caption, widget: string, hint: "To show a level price, type {{p.presenting}}, {{p.platinum}}, {{p.silver}} and so on."}
               - {label: Logo, name: logo, widget: image, required: false}
-              - {label: "Link (e.g. /sponsor?tier=silver or https://...)", name: url, widget: string, required: false}
-              - {label: "This is an open slot (dashed outline)", name: open_slot, widget: boolean, default: false}
-          - label: "Sponsors (lower scroll)"
+              - {label: "Link when clicked (optional)", name: url, widget: string, required: false, hint: "For example /sponsor?tier=silver or https://example.com"}
+              - {label: "This is an open slot (dashed box, no logo yet)", name: open_slot, widget: boolean, default: false}
+          - {label: "Lower scroll title", name: regular_title, widget: string}
+          - {label: "Lower scroll link text", name: regular_link_label, widget: string}
+          - label: "Lower scroll: sponsors"
             name: regular
             widget: list
+            label_singular: logo
             summary: "{{fields.name}}"
             fields: *partner
 
@@ -134,14 +281,15 @@ collections:
           - label: Highlights
             name: items
             widget: list
+            label_singular: highlight
             summary: "{{fields.title}}"
             fields:
               - {label: Title, name: title, widget: string}
               - {label: "One-line summary", name: summary, widget: string}
-              - {label: Detail, name: detail, widget: text}
-              - {label: "Link goes to", name: page, widget: select, options: [register, speakers, exhibit, sponsor, information, schedule, directions, history, contact, advertise]}
-              - {label: "Link label", name: link_label, widget: string}
-              - {label: Audience, name: audience, widget: select, multiple: true, options: [Attendees, Sponsors, Exhibitors]}
+              - {label: Details, name: detail, widget: text}
+              - {label: "Button goes to", name: page, widget: select, options: [register, speakers, exhibit, sponsor, information, schedule, directions, history, contact, advertise]}
+              - {label: "Button text", name: link_label, widget: string}
+              - {label: "Who it is for", name: audience, widget: select, multiple: true, options: [Attendees, Sponsors, Exhibitors]}
       - name: faq
         label: Frequently asked questions
         file: content/faq.json
@@ -149,10 +297,11 @@ collections:
           - label: Questions
             name: items
             widget: list
+            label_singular: question
             summary: "{{fields.question}}"
             fields:
               - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: text, hint: "Prices and dates can use tokens like {{tk.eb}} and {{ebStart}}. See the guide."}
+              - {label: Answer, name: answer, widget: text, hint: "To show a live price or date, type a code in curly brackets, like {{tk.eb}} for the Early Bird price. Click How to edit for the list."}
       - name: history
         label: NAMC history and numbers
         file: content/history.json
@@ -160,19 +309,21 @@ collections:
           - label: Timeline
             name: timeline
             widget: list
+            label_singular: event
             summary: "{{fields.year}} {{fields.title}}"
             fields:
               - {label: Year, name: year, widget: string}
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: text}
-              - {label: Scope, name: scope, widget: select, options: [National, Wisconsin]}
-          - label: Numbers
+              - {label: "Is it national or Wisconsin?", name: scope, widget: select, options: [National, Wisconsin]}
+          - label: "Numbers"
             name: numbers
             widget: list
+            label_singular: number
             summary: "{{fields.value}} {{fields.label}}"
             fields:
-              - {label: Value, name: value, widget: string}
-              - {label: "Prefix (e.g. $)", name: prefix, widget: string, required: false}
-              - {label: "Suffix (e.g. M, B, +)", name: suffix, widget: string, required: false}
-              - {label: "Decimals (0 or 1)", name: decimals, widget: number, value_type: int, min: 0, max: 1}
-              - {label: Label, name: label, widget: string}
+              - {label: Number, name: value, widget: string}
+              - {label: "Symbol before it (for example $)", name: prefix, widget: string, required: false}
+              - {label: "Letter after it (for example M, B or +)", name: suffix, widget: string, required: false}
+              - {label: "Decimal places (0 or 1)", name: decimals, widget: number, value_type: int, min: 0, max: 1}
+              - {label: "What it describes", name: label, widget: string}

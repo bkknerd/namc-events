@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  command = "echo No build step needed: static site"
 
 # Real files win (prerendered pages, /img, etc.). Anything else gets the 404 page.
 [[headers]]

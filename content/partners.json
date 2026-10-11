@@ -55,5 +55,9 @@
       "url": "/sponsor?tier=gov",
       "open_slot": true
     }
-  ]
+  ],
+  "top_title": "Top sponsors & partners",
+  "top_link_label": "Become a top sponsor",
+  "regular_title": "Sponsors",
+  "regular_link_label": "Become a sponsor"
 }

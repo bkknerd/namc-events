@@ -1,3 +1,31 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>NAMC-WI Content Manager</title></head>
-<body><script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>NAMC-WI Content Manager</title>
+<link rel="stylesheet" href="/admin/admin.css"></head>
+<body>
+<button id="dl-help" type="button" aria-haspopup="dialog">How to edit</button>
+<dialog id="dl-dlg" aria-labelledby="dl-t">
+  <div class="dl-head"><img src="/img/img-ce186583.webp" alt="NAMC Wisconsin Chapter" height="40"><h2 id="dl-t">How to edit the site</h2><button type="button" id="dl-x" aria-label="Close help">&times;</button></div>
+  <ol>
+    <li><b>Pick a section</b> in the list on the left (for example <em>Home page</em> or <em>Registration and prices</em>), then pick the item inside it.</li>
+    <li><b>Change the text or numbers.</b> The panel on the right shows roughly how it will look on the site.</li>
+    <li><b>Photos:</b> click a photo box, then <em>Choose an image</em> to upload one. Square or portrait photos about 800 pixels wide work best.</li>
+    <li><b>Press Publish</b> at the top, then <em>Publish now</em>. Your change is live on the website in about a minute.</li>
+  </ol>
+  <h3>Good to know</h3>
+  <ul>
+    <li>Change a price once and it updates on every page. In text boxes you can type <code>{{tk.eb}}</code> for the Early Bird price, <code>{{tk.std}}</code> for Standard, and <code>{{tk.bo}}</code> for the booth price.</li>
+    <li>Never change a <b>Code</b> on an existing ticket or sponsor level. The site uses it behind the scenes.</li>
+    <li>Made a mistake? Do not worry. Every change is saved with history, so it can be undone.</li>
+  </ul>
+  <p class="dl-foot-note">Headlines and page wording that are not in these sections still need a developer.</p>
+</dialog>
+<div id="dl-foot">Powered by Mike Browne and Draft &amp; Logic</div>
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<script src="/admin/preview.js"></script>
+<script>
+(function(){var d=document.getElementById('dl-dlg'),b=document.getElementById('dl-help'),x=document.getElementById('dl-x');
+b.onclick=function(){if(d.showModal)d.showModal();else d.setAttribute('open','')};
+x.onclick=function(){d.close?d.close():d.removeAttribute('open')};
+d.addEventListener('click',function(e){if(e.target===d)d.close&&d.close()})})();
+</script>
+</body></html>
