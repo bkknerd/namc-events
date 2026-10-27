@@ -19,7 +19,9 @@
       "linkedin_url": "",
       "linkedin_search": "Dora Drake Wisconsin Senate",
       "web_url": "https://legis.wisconsin.gov/senate/04/drake",
-      "web_label": "Official page"
+      "web_label": "Official page",
+      "title": "State Senator",
+      "bio": "A Milwaukee community leader focused on youth investment, economic stability, and stronger pathways for returning citizens."
     },
     {
       "name": "Cavalier Johnson",
@@ -27,7 +29,9 @@
       "linkedin_url": "",
       "linkedin_search": "Cavalier Johnson Milwaukee Mayor",
       "web_url": "https://city.milwaukee.gov/mayor",
-      "web_label": "Mayor’s office"
+      "web_label": "Mayor’s office",
+      "title": "Mayor, City of Milwaukee",
+      "bio": "Milwaukee’s mayor and a champion for public safety, housing, jobs, transportation, and sustainable economic growth."
     },
     {
       "name": "Ugo Nwagbaraocha",
@@ -35,7 +39,9 @@
       "linkedin_url": "",
       "linkedin_search": "Ugo Nwagbaraocha Diamond Discs International",
       "web_url": "https://biztimes.com/ugo-nwagbaraocha-wisconsin275",
-      "web_label": "BizTimes profile"
+      "web_label": "BizTimes profile",
+      "title": "President, Diamond Discs International",
+      "bio": "A business and construction industry leader advancing opportunity, connection, and growth across the region."
     }
   ]
 }

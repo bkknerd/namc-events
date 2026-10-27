@@ -53,3 +53,22 @@ Change a price or a sale date once and every page updates: the home page, Regist
 | Login works but you cannot save | The GitHub account needs write access to the repository (Settings, Collaborators). |
 | Nothing happens when you press the login button | A browser pop-up blocker. Allow pop-ups for the site. |
 | Login fails on a custom domain | Use the Netlify address, or make sure the custom domain is attached to this same Netlify site. |
+
+## Page text (every page)
+
+Every heading, paragraph, button, form label and message on the site is in **Page text (every page)** in the editor, grouped by page. The top bar, menu, footer, phone bar and the search descriptions are under **Site-wide**.
+
+- Change the words and click **Publish**. The site updates in about a minute.
+- Leave a box empty to go back to the original text.
+- Codes in curly brackets, like `{{tk.eb}}`, fill in live prices and dates. Keep them if you want the number to stay current.
+- A few boxes contain simple tags such as `<br>` (line break), `<b>` (bold) or links. Keep them, or remove them on purpose.
+
+## Coming soon page
+
+**Coming soon page > Coming soon switch and text** controls a full-screen holding page.
+
+- Tick **Show the coming soon page to visitors** and publish: about a minute later every page shows the coming soon page. Untick and publish to bring the full site back.
+- The editor (/admin) keeps working while it is on.
+- To check the full site while it is on, open `/?preview=` followed by the **Preview key**, for example `https://namc-events.netlify.app/?preview=namc-preview-7q4k`. A gold bar shows you are previewing. Open `/?preview=off` to leave.
+- You can see the coming soon page any time at `/coming-soon`, even when it is off.
+- Sign-ups from its form arrive in Netlify under Forms > notify, marked "Coming soon".
