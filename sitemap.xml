@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://2027.namcwi.org/</loc></url><url><loc>https://2027.namcwi.org/information</loc></url><url><loc>https://2027.namcwi.org/schedule</loc></url><url><loc>https://2027.namcwi.org/speakers</loc></url><url><loc>https://2027.namcwi.org/register</loc></url><url><loc>https://2027.namcwi.org/directions</loc></url><url><loc>https://2027.namcwi.org/history</loc></url><url><loc>https://2027.namcwi.org/sponsor</loc></url><url><loc>https://2027.namcwi.org/exhibit</loc></url><url><loc>https://2027.namcwi.org/advertise</loc></url><url><loc>https://2027.namcwi.org/contact</loc></url><url><loc>https://2027.namcwi.org/archive</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://2027.namcwi.org/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://2027.namcwi.org/information/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://2027.namcwi.org/schedule/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://2027.namcwi.org/speakers/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://2027.namcwi.org/register/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://2027.namcwi.org/directions/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://2027.namcwi.org/history/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://2027.namcwi.org/sponsor/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://2027.namcwi.org/exhibit/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://2027.namcwi.org/advertise/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://2027.namcwi.org/contact/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://2027.namcwi.org/archive/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+</urlset>

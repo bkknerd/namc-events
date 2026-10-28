@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /coming-soon/
 
 Sitemap: https://2027.namcwi.org/sitemap.xml

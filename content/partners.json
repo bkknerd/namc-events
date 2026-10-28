@@ -15,7 +15,7 @@
     {
       "name": "Presenting Partner",
       "caption": "Available · {{p.presenting}}",
-      "url": "/sponsor?tier=presenting",
+      "url": "/sponsor/?tier=presenting",
       "open_slot": true
     },
     {
@@ -26,7 +26,7 @@
     {
       "name": "Platinum Sponsor",
       "caption": "Available · {{p.platinum}}",
-      "url": "/sponsor?tier=platinum",
+      "url": "/sponsor/?tier=platinum",
       "open_slot": true
     }
   ],
@@ -34,25 +34,25 @@
     {
       "name": "Silver Sponsor",
       "caption": "Available · {{p.silver}}",
-      "url": "/sponsor?tier=silver",
+      "url": "/sponsor/?tier=silver",
       "open_slot": true
     },
     {
       "name": "Bronze Sponsor",
       "caption": "Available · {{p.bronze}}",
-      "url": "/sponsor?tier=bronze",
+      "url": "/sponsor/?tier=bronze",
       "open_slot": true
     },
     {
       "name": "Copper Sponsor",
       "caption": "Available · {{p.copper}}",
-      "url": "/sponsor?tier=copper",
+      "url": "/sponsor/?tier=copper",
       "open_slot": true
     },
     {
       "name": "Government & Minority Business",
       "caption": "Available · {{p.gov}}",
-      "url": "/sponsor?tier=gov",
+      "url": "/sponsor/?tier=gov",
       "open_slot": true
     }
   ],

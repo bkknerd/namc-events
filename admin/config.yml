@@ -435,6 +435,26 @@ collections:
               - {label: "Menu: description under advertise", name: "menu_desc_advertise", widget: string, required: false}
               - {label: "Menu: description under history", name: "menu_desc_history", widget: string, required: false}
               - {label: "Menu: description under archive", name: "menu_desc_archive", widget: string, required: false}
+              - {label: "Search title (browser tab): home page", name: "seo_title_home", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): information page", name: "seo_title_information", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): program page", name: "seo_title_schedule", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): speakers page", name: "seo_title_speakers", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): register page", name: "seo_title_register", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): venue page", name: "seo_title_directions", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): history page", name: "seo_title_history", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): sponsor page", name: "seo_title_sponsor", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): exhibit page", name: "seo_title_exhibit", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): advertise page", name: "seo_title_advertise", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): contact page", name: "seo_title_contact", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): 2026 B2B Forum page", name: "seo_title_archive", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search title (browser tab): page not found page", name: "seo_title_notfound", widget: string, required: false, hint: "Keep under 60 characters."}
+              - {label: "Search and share description: register page", name: "seo_register", widget: text, required: false, hint: "Aim for 140 to 160 characters."}
+              - {label: "Search and share description: venue page", name: "seo_directions", widget: text, required: false, hint: "Aim for 140 to 160 characters."}
+              - {label: "Search and share description: history page", name: "seo_history", widget: text, required: false, hint: "Aim for 140 to 160 characters."}
+              - {label: "Search and share description: sponsor page", name: "seo_sponsor", widget: text, required: false, hint: "Aim for 140 to 160 characters."}
+              - {label: "Search and share description: exhibit page", name: "seo_exhibit", widget: text, required: false, hint: "Aim for 140 to 160 characters."}
+              - {label: "Search and share description: advertise page", name: "seo_advertise", widget: text, required: false, hint: "Aim for 140 to 160 characters."}
+              - {label: "Search and share description: contact page", name: "seo_contact", widget: text, required: false, hint: "Aim for 140 to 160 characters."}
               - {label: "Search and share description: speakers page", name: "seo_speakers", widget: text, required: false}
               - {label: "Search and share description: notfound page", name: "seo_notfound", widget: string, required: false}
               - {label: "Search and share description: archive page", name: "seo_archive", widget: text, required: false}
