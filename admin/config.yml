@@ -173,6 +173,7 @@ collections:
         file: content/pricing.json
         fields:
           - {label: "Hotel rate per night", name: hotel_rate, widget: string, hint: "Numbers only, for example 239.00"}
+          - {label: "Payment page address (from National)", name: payment_url, widget: string, required: false, hint: "Leave empty until National provides it. While empty, the site does not link to any payment page and the Register page keeps collecting sign-ups only. Must start with https://"}
           - label: "Program ad rates"
             name: ads
             widget: list
@@ -578,6 +579,7 @@ collections:
             collapsed: true
             fields:
               - {label: "Small label: Register · Opens {{ebOpen}}", name: "register_opens", widget: string, required: false}
+              - {label: "Small label after January 1 if there is no payment page yet", name: "register_opening_soon", widget: string, required: false}
               - {label: "Page title: Get notified when registration opens", name: "get_notified_when_registration_opens", widget: string, required: false}
               - {label: "Text: Registration isn’t open yet. Leave your email and NAMC Wisconsin will …", name: "registration_isn_t_open_yet", widget: text, required: false}
               - {label: "Heading: Be first in line.", name: "be_first_in_line", widget: string, required: false}
@@ -782,7 +784,7 @@ collections:
               - {label: "Text: Send message", name: "send_message", widget: string, required: false}
               - {label: "Small label: NAMC Wisconsin Chapter", name: "namc_wisconsin_chapter", widget: string, required: false}
               - {label: "Text: 9300 West Heather Avenue Milwaukee, WI 53224", name: "9300_west_heather_avenue_milwaukee", widget: text, required: false, hint: "Keep tags like <br>, <b> and links as they are, or remove them on purpose."}
-              - {label: "Text: (414) 305-7360 timothy@namcwi.org namcwievents.org", name: "414_305_7360_timothy_namcwi", widget: text, required: false, hint: "Keep tags like <br>, <b> and links as they are, or remove them on purpose."}
+              - {label: "Text: (414) 305-7360 timothy@namcwi.org", name: "414_305_7360_timothy_namcwi", widget: text, required: false, hint: "Keep tags like <br>, <b> and links as they are, or remove them on purpose."}
           - label: "Form labels and messages"
             name: forms
             widget: object

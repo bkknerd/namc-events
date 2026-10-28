@@ -241,7 +241,7 @@
     "registration_includes_the_welcome_reception_2": "Registration includes the Welcome Reception, all plenary sessions and networking events, and the Hall of Fame Awards Gala (semi-formal or formal attire required). Want a bigger presence? <a href=\"/sponsor\" style=\"font-weight:700\">See sponsor levels</a>.",
     "your_order": "Your order",
     "continue_to_checkout": "Continue to checkout",
-    "how_checkout_works_your_selections": "<b>How checkout works:</b> your selections here give you a total. Continue to namcwievents.org (opens in a new tab) and choose the same items to pay.",
+    "how_checkout_works_your_selections": "<b>How checkout works:</b> your selections here give you a total. Continue to the payment page (opens in a new tab) and choose the same items to pay.",
     "copy_my_selections": "Copy my selections",
     "div_class_sf_tkc": "<div class=\"sf tkc",
     "available": "Available · ",
@@ -256,7 +256,8 @@
     "nothing_selected_yet": "Nothing selected yet.",
     "copied_paste_it_into_your": "Copied. Paste it into your notes.",
     "copy_not_available_select_the": "Copy not available. Select the text in Your order instead.",
-    "translate": "translate("
+    "translate": "translate(",
+    "register_opening_soon": "Register · Opening soon"
   },
   "venue": {
     "venue": "Venue",
@@ -374,7 +375,7 @@
     "send_message": "Send message",
     "namc_wisconsin_chapter": "NAMC Wisconsin Chapter",
     "9300_west_heather_avenue_milwaukee": "9300 West Heather Avenue<br>Milwaukee, WI 53224",
-    "414_305_7360_timothy_namcwi": "<a href=\"tel:+14143057360\">(414) 305-7360</a><br><a href=\"mailto:timothy@namcwi.org\">timothy@namcwi.org</a><br><a href=\"https://www.namcwievents.org\">namcwievents.org</a>"
+    "414_305_7360_timothy_namcwi": "<a href=\"tel:+14143057360\">(414) 305-7360</a><br><a href=\"mailto:timothy@namcwi.org\">timothy@namcwi.org</a>"
   },
   "forms": {
     "label_for": "<label for=\"",
