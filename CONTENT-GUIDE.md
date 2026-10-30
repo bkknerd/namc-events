@@ -6,10 +6,10 @@ Open **/admin** on the website, sign in with GitHub, and use the **How to edit**
 | Section in the editor | What it controls |
 |---|---|
 | Home page | The text and photos on the home page: top banner, the three Attend / Sponsor / Exhibit cards, Why Milwaukee, the numbers, Why partner, the quote, the forum banner |
-| Registration and prices | Early Bird and Standard prices and sale dates, Gala table and ticket prices, booth price, hotel rate, program ad rates |
+| Registration and prices | Early Bird and Standard prices and sale dates, Gala table and ticket prices, booth price, hotel rate, program ad rates, payment page address |
 | Sponsorship levels | Level names, prices, summaries and benefits |
 | Speakers | The keynote (name, title, photo, bio) and the featured speakers |
-| Logo scrolls | The upper scroll (top sponsors and partners) and the lower scroll (sponsors), including their titles |
+| Partners and sponsor tower | Partners under "Built on", sponsor logos, and which tower floors are open |
 | Program, FAQ and history | Program highlights, FAQ answers, the NAMC history timeline and numbers |
 
 The panel on the right while you edit is a live preview. It is simplified, so photos and spacing look a little different on the real site.
@@ -33,7 +33,7 @@ Change a price or a sale date once and every page updates: the home page, Regist
 - Photos: upload in the editor. Use a square or portrait photo, about 800 px wide, saved as WebP or JPG.
 - Every photo has a description for screen readers. Update it when you change the photo.
 - Changes go live about a minute after you press **Publish**.
-- Page wording that is not in these lists (the Information page text, form wording and similar) still needs a developer.
+- Every other piece of page wording is under **Page text (every page)** (see below).
 
 ## One-time setup (a developer does this once)
 1. Put this folder in the GitHub repository `bkknerd/namc-events` (branch `main`) and connect it to the Netlify site.
