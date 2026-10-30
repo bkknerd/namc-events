@@ -39,6 +39,6 @@ export default async (request, context) => {
 
 export const config = {
   path: '/*',
-  excludedPath: ['/admin', '/admin/*', '/content/*', '/img/*', '/coming-soon', '/coming-soon/*', '/.netlify/*',
+  excludedPath: ['/admin', '/admin/*', '/content/*', '/img/*', '/coming-soon', '/coming-soon/*', '/submissions', '/submissions/*', '/api/*', '/.netlify/*',
     '/favicon.svg', '/favicon.ico', '/apple-touch-icon.png', '/og-image.png', '/robots.txt', '/sitemap.xml'],
 };

@@ -72,3 +72,9 @@ Every heading, paragraph, button, form label and message on the site is in **Pag
 - To check the full site while it is on, open `/?preview=` followed by the **Preview key**, for example `https://namc-events.netlify.app/?preview=namc-preview-7q4k`. A gold bar shows you are previewing. Open `/?preview=off` to leave.
 - You can see the coming soon page any time at `/coming-soon`, even when it is off.
 - Sign-ups from its form arrive in Netlify under Forms > notify, marked "Coming soon".
+
+## Form inbox
+
+Every form sent through the site (Notify me sign-ups, sponsorships, exhibitors, sponsor guests and contact messages) is listed at **/submissions/**, for example https://2027.namcwi.org/submissions/. Enter the team password to open it. You can switch between forms, search, open a row to see every field and attachment, and download any form as a CSV for Excel or Google Sheets. Submissions still arrive by email as well.
+
+One-time setup (Netlify): create a personal access token (User settings > Applications > Personal access tokens), then add two environment variables under Site configuration > Environment variables: NETLIFY_API_TOKEN (the token) and SUBMISSIONS_PASSWORD (the password the team will use). Redeploy the site once afterwards.
