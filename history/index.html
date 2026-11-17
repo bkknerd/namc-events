@@ -288,6 +288,31 @@ html.cs .nv{border-bottom-color:transparent}
 @media(max-width:1023px){.cs-hero{grid-template-columns:minmax(0,1fr);gap:28px;min-height:0}}
 #csbar{position:sticky;top:0;z-index:60;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;padding:10px 16px;background:var(--gold);color:var(--navy);font:600 12px var(--fm);letter-spacing:.04em;text-transform:uppercase}
 #csbar a{color:var(--navy)}
+</style>
+<style id="crimson">/* ===== crimson leads: crimson surfaces, navy for text, gold accents ===== */
+:root{--crimson:#8c181c;--crimson-dk:#601818;--crimson-xd:#3e0e11;--mute-d:#ecd3cc}
+.navy,.red,.cta.r,.av,.vid,.path.e,.bio .bh,.skip,.mbar,.kn .kp,#up,.pst,.tabs button[aria-pressed=true],.pvt button[aria-pressed=true],.ptr li.on .pnd,input[type=file]::file-selector-button{background:var(--crimson)!important;color:var(--cream-city)}
+.tabs button[aria-pressed=true]{border-color:var(--crimson)!important}
+.tb{background:var(--crimson-dk)!important}
+.night{background:linear-gradient(0deg,var(--crimson) 0%,rgba(140,24,28,.25) 60%),linear-gradient(180deg,#5a1a1e,#2a0a0c)!important}
+.tw-sec{background:linear-gradient(180deg,#8c181c 0%,#6a1519 55%,#3e0e11 100%)!important}
+.tf{background:rgba(30,6,8,.45)}
+.tf .wn{background-color:#4a1215;background-image:linear-gradient(90deg,rgba(30,6,8,.9) 0 3px,transparent 3px),linear-gradient(0deg,rgba(30,6,8,.9) 0 3px,transparent 3px)}
+.cpy,.pvt,.pnd,.kn [data-bio]{border-color:var(--crimson)!important}
+.sum .tot{border-top-color:var(--crimson)}
+a.mi:hover,.opt:hover,.tabs button:hover{border-color:var(--crimson)!important}
+/* hovers that used to go navy now go deep crimson */
+.tk:hover,.cta.r:hover,.ft .fcta:hover,.fcta:hover,.kn [data-bio]:hover,.cpy:hover,.tabs button[aria-pressed=true]:hover,.jump button:active{background:var(--crimson-dk)!important;color:var(--cream-city)!important}
+.ov[style*="--navy"]{background:linear-gradient(to top,var(--crimson-xd),rgba(62,14,17,.3),transparent)!important}
+/* Register stays the loudest button: brick red on light, gold on crimson */
+.tk:hover,a.cta[href="/register/"]:hover,a.cta[href^="/register?"]:hover,a#co:hover,.cta.reg:hover{background:var(--crimson-xd)!important}
+:is(.navy,.red,.pst,.mbar,.tw-sec,.night,.bio .bh) :is(.tk,a.cta[href="/register/"],a.cta[href^="/register?"],a#co,.cta.reg){background:var(--gold)!important;color:var(--crimson-xd)!important}
+:is(.navy,.red,.pst,.mbar,.tw-sec,.night,.bio .bh) :is(.tk,a.cta[href="/register/"],a.cta[href^="/register?"],a#co,.cta.reg):hover{background:var(--cream-city)!important;color:var(--crimson-xd)!important}
+.ph>div[style*="max-width:36rem"]{background:rgba(96,24,24,.9)!important}
+.cta.reg.live{box-shadow:0 0 0 3px var(--crimson),0 0 0 5px var(--gold)}
+/* crimson headings on light surfaces */
+.sf h1.d,.sf h2.d,aside.side.sf h2,.rs-form h2.d{color:var(--crimson)}
+@media print{.navy,.red,.pst,.tb{background:none!important}}
 </style></head>
 <body>
 <a class="skip" href="#" id="skip" data-c="site.skip_link">Skip to content</a><div class="tb" role="region" aria-label="Conference venue, dates and weather"><div class="max"><div class="g1"><span class="loc" data-c="site.topbar_city">Milwaukee, WI</span><span class="when" data-c="site.topbar_dates">Pfister Hotel · June 28–30, 2027</span></div><div class="g2"><span class="wx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><span data-c="site.topbar_weather">Typical late June <b>80°F / 61°F</b></span></span><span class="sep hide-s" aria-hidden="true">|</span><a class="hide-s" href="https://forecast.weather.gov/MapClick.php?lat=43.0389&amp;lon=-87.9065" target="_blank" rel="noopener" data-c="site.topbar_forecast" data-ch="site.topbar_forecast_url">Live forecast ↗</a></div></div></div><header class="max"><div class="nv"><a class="logo" href="/" aria-label="NAMC Wisconsin Chapter home"><img src="/img/img-ce186583.webp" alt="NAMC Wisconsin Chapter"><span class="lk"><b data-c="site.header_name">NAMC National Conference</b><i data-c="site.header_tagline">Powering the Future · 2027</i></span></a><nav class="links" id="nav" aria-label="Main"><div class="dd"><button type="button" class="ddb" aria-expanded="false" aria-haspopup="true" aria-controls="dd1">Event<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 3l4 4 4-4"></path></svg></button><ul class="dm" id="dd1"><li><a href="/information/"><b>Information</b><small>Overview, gala, hotel and FAQ</small></a></li><li><a href="/schedule/"><b>Program</b><small>What happens June 28 to 30</small></a></li><li><a href="/speakers/"><b>Speakers</b><small>The 2027 keynote and featured speakers</small></a></li><li><a href="/directions/"><b>Venue</b><small>The Pfister Hotel and directions</small></a></li></ul></div><div class="dd"><button type="button" class="ddb" aria-expanded="false" aria-haspopup="true" aria-controls="dd2">Get involved<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 3l4 4 4-4"></path></svg></button><ul class="dm" id="dd2"><li><a href="/sponsor/"><b>Sponsor</b><small>Levels from $5,000 to $50,000</small></a></li><li><a href="/exhibit/"><b>Exhibit</b><small>Minority business booths, $1,500</small></a></li><li><a href="/advertise/"><b>Advertise</b><small>Program journal advertising</small></a></li></ul></div><div class="dd"><button type="button" class="ddb cur" aria-expanded="false" aria-haspopup="true" aria-controls="dd3">History<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 3l4 4 4-4"></path></svg></button><ul class="dm" id="dd3"><li><a href="/history/" class="cur" aria-current="page"><b>History</b><small>NAMC history and the Wisconsin chapter</small></a></li><li><a href="/archive/"><b>2026 B2B Forum</b><small>The November 19, 2026 B2B Forum</small></a></li></ul></div><a href="/contact/">Contact</a></nav><div class="rt"><a class="tk" href="/register/" data-c="site.header_register">Register</a><button id="mt" aria-expanded="false" data-c="site.menu_button">Menu</button></div></div></header>
